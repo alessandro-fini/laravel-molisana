@@ -82,6 +82,8 @@ main .container .products-container .cards .layover {
   transform: translate(-50%, -50%);
   text-align: center;
   display: none;
+  border: 4px solid black;
+  padding: 20px 0;
 }
 
 main .container .products-container .cards .layover a {
