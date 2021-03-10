@@ -53,6 +53,13 @@ header .menu-list ul li:hover a {
   color: black;
 }
 
+main {
+  /* prodotti */
+  /* / prodotti */
+  /* news */
+  /* / news */
+}
+
 main .image-home {
   width: 100%;
   height: 850px;
@@ -101,6 +108,42 @@ main .container .products-container .cards:hover {
 
 main .container .products-container .cards:hover .layover {
   display: block;
+}
+
+main .news-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+main .news-container h2 {
+  flex-grow: 1;
+  margin-bottom: 20px;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+main .news-container .box-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-image: url(/images/fondo-pag-speciali.jpg?06a79f19fbb4489a17e2dff67ce37137);
+}
+
+main .news-container .box-container .box {
+  flex-basis: 40%;
+  height: 300px;
+  margin: 20px 0;
+  padding: 20px 40px;
+  border: 4px solid gray;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 footer {

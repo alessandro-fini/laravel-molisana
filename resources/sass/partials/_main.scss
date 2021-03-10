@@ -4,6 +4,7 @@ main{
         height: 850px;
         background-image: url('../../img/molisana-home.jpg');
     }
+    /* prodotti */
     .container{
         .products-container{
             display: flex;
@@ -43,4 +44,39 @@ main{
             }
         }
     }
+    /* / prodotti */
+    /* news */
+    .news-container{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        h2{
+            flex-grow: 1;
+            margin-bottom: 20px;
+            font-size: 40px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .box-container{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-image: url('../../img/fondo-pag-speciali.jpg');
+            .box{
+                flex-basis: 40%;
+                height: 300px;
+                margin: 20px 0;
+                padding: 20px 40px;
+                border: 4px solid gray;
+                border-radius: 5px;
+                background-color: white;
+                font-size: 18px;
+                line-height: 1.6;
+            }
+        }
+    }
+    /* / news */
 }
