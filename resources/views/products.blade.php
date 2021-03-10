@@ -3,5 +3,16 @@
 @section('title', 'I nostri prodotti')
 
 @section('content')
-    <p>contenuto dei prodotti</p>
+    <div class="container">
+        <div class="products-container">
+            @foreach ($formati as $formato)
+                <div class="cards">
+                    <img src="{{ $formato['src'] }}" alt="">
+                    <div class="layover">
+                        <a href="#">{{ $formato['titolo'] }}</a>
+                    </div>
+                </div>                
+            @endforeach
+        </div>
+    </div>
 @endsection
