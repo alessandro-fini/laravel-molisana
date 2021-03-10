@@ -128,10 +128,14 @@ main .news-container h2 {
 
 main .news-container .box-container {
   width: 100%;
+  padding: 60px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   background-image: url(/images/fondo-pag-speciali.jpg?06a79f19fbb4489a17e2dff67ce37137);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 main .news-container .box-container .box {

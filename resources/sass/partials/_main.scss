@@ -61,10 +61,14 @@ main{
         }
         .box-container{
             width: 100%;
+            padding: 60px 0;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
             background-image: url('../../img/fondo-pag-speciali.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
             .box{
                 flex-basis: 40%;
                 height: 300px;
