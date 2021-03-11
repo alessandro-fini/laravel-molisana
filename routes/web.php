@@ -20,11 +20,31 @@ Route::get('/', function () {
 Route::get('/prodotti', function () {
     $pasta = config('pasta');
 
-    $lunghe = array_filter($pasta, function($k){
-        
+    $lunghe = array_filter($pasta, function($item){
+        if ($item['tipo'] == 'lunga') {
+            return $item;
+        }
     });
     
-    $data = ['formati' => $pasta];
+    $corte = array_filter($pasta, function($item){
+        if ($item['tipo'] == 'corta') {
+            return $item;
+        }
+    });
+
+    $cortissime = array_filter($pasta, function($item){
+        if ($item['tipo'] == 'cortissima') {
+            return $item;
+        }
+    });
+
+    $data = [
+        'formati' => [
+            'lunga' => $lunghe,
+            'corta' => $corte,
+            'cortissima' => $cortissime
+        ]
+    ];
     
     return view('products', $data);
 }) -> name('products-page');
@@ -39,7 +59,7 @@ Route::get('/dettaglio/{id}', function ($id) {
     } else {
         abort('404');
     }
-    
+
 }) -> name('specifics-page');
 
 Route::get('/notizie', function () {

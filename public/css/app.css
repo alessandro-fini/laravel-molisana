@@ -76,6 +76,15 @@ main .container .products-container {
   justify-content: center;
 }
 
+main .container .products-container h2 {
+  flex-basis: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 30px 0;
+  font-size: 32px;
+  color: gray;
+}
+
 main .container .products-container .cards {
   flex-basis: calc(100% / 3);
   position: relative;
@@ -100,6 +109,7 @@ main .container .products-container .cards .layover {
 
 main .container .products-container .cards .layover a {
   width: 100%;
+  padding: 20px 0;
   color: black;
   font-weight: bold;
   font-size: 25px;
