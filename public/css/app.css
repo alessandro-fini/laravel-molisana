@@ -62,6 +62,8 @@ main {
   /* / prodotti */
   /* news */
   /* / news */
+  /* specifics */
+  /* / specifics */
 }
 
 main .image-home {
@@ -162,6 +164,40 @@ main .news-container .box-container .box {
   background-color: white;
   font-size: 18px;
   line-height: 1.6;
+}
+
+main .specifics h1 {
+  width: 100%;
+  color: gray;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+main .specifics img {
+  width: 100%;
+}
+
+main .specifics .description {
+  margin: 40px auto;
+  line-height: 1.8;
+  font-size: 20px;
+  font-style: italic;
+  text-align: justify;
+}
+
+main .specifics .description p {
+  margin-bottom: 40px;
+}
+
+main .specifics .description .ico {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main .specifics .description .ico i {
+  font-size: 28px;
 }
 
 footer {

@@ -92,4 +92,36 @@ main{
         }
     }
     /* / news */
+    /* specifics */
+    .specifics{
+        h1{
+            width: 100%;
+            color: gray;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        img{
+            width: 100%;
+        }
+        .description{
+            margin: 40px auto;
+            line-height: 1.8;
+            font-size: 20px;
+            font-style: italic;
+            text-align: justify;
+            p{
+                margin-bottom: 40px;
+            }
+            .ico{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                i{
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+    /* / specifics */
 }
