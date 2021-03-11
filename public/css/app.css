@@ -18,6 +18,10 @@ a {
   margin: auto;
 }
 
+.active {
+  text-decoration: underline;
+}
+
 header {
   margin-bottom: 40px;
 }

@@ -5,11 +5,11 @@
 @section('content')
     <div class="container">
         <div class="products-container">
-            @foreach ($formati as $formato)
+            @foreach ($formati as $key => $formato)
                 <div class="cards">
                     <img src="{{ $formato['src'] }}" alt="">
                     <div class="layover">
-                        <a href="#">{{ $formato['titolo'] }}</a>
+                        <a href="{{ route('specifics-page', ['id' => $key]) }}">{{ $formato['titolo'] }}</a>
                     </div>
                 </div>                
             @endforeach
